@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виджет погоды</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/7972cc1e59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div class="container">
+        <div class="search__box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Введите название">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+        <div class="error">
+            <p>Неправильно введено название населенного пункта</p>
+        </div>
+        <div class="weather">
+            <div class="weather-image">
+                <i class="fa-solid fa-cloud"></i>
+            </div>
+            <h1 class="temp">22 </h1>
+            <h2 class="city">Berlin</h2>
+            <div class="deatils">
+                <div class="col">
+                    <i class="fa-solid fa-water"></i>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p class="wind">12 km/h</p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
